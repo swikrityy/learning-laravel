@@ -19,7 +19,7 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $globalData = getGlobalData();
-        View::share($globalData);
-        Paginator::useBootstrapFive();
+         View::share($globalData);
+         Paginator::useBootstrapFive();
     }
 }
