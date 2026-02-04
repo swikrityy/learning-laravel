@@ -17,11 +17,11 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
         User::create([
             'name' => 'Super Admin',
-            'email' => 'admin@helpful.com',
+            'email' => 'admin1@helpful.com',
             'password' => Hash::make('Nepal@123'),
         ]);
-        $this->call(SettingsSeeder::class);
-        $this->call(SEnquirySeeder::class);
-        $this->call(PagesSeeder::class);
+        // $this->call(SettingsSeeder::class);
+        // $this->call(SEnquirySeeder::class);
+        // $this->call(PagesSeeder::class);
     }
 }
